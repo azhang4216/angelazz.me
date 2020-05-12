@@ -1,0 +1,252 @@
+:root {
+  font-size: 16px;
+  font: "Josefin Sans";
+  --primary-text-color: black;
+  --secondary-text-color: gray;
+  --tertiary-text-color: purple;
+  --primary-bg: beige;
+  --secondary-bg: lightseagreen;
+  --transition-speed: 600ms;
+  --primary-font: 'Open Sans';
+  --secondary-font: 'Permanent Marker';
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 1rem; /* 1rem * 16px = 16px */
+  text-align: center;
+}
+
+.name {
+  position: absolute;
+  left: 25px;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+}
+
+.title {
+  font-family: "Permanent Marker";
+  margin-bottom: 3rem;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 50px;
+  display: relative;
+  margin: 100px;
+}
+
+/* make the scrollbar prettier */
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--primary-bg);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--primary-text-color);
+}
+
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  right: 0px;
+  position: fixed;
+  background-color: var(--secondary-bg);
+  border: solid;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: FloralWhite;
+  color: var(--tertiary-text-color);
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+  text-transform: uppercase;
+  font-family: var(--primary-font);
+}
+
+.nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--secondary-text-color);
+  background: var(--secondary-bg);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.logo svg {
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+}
+
+.logo-text {
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
+}
+
+.navbar:hover {
+  width: 16rem;
+}
+
+.navbar:hover .link-text {
+  display: block;
+}
+
+.navbar:hover .logo svg {
+  transform: rotate(-180deg);
+}
+
+.content1 p {
+  margin-left: 2.5em;
+  padding: 0 7em 0.5em 0;
+  text-align: left;
+  text-indent: 3rem;
+  font-family: var(--primary-font);
+}
+
+.content2 p {
+  margin-left: 2.5em;
+  margin-right: 2.5rem;
+  padding: 0 5rem 0.5rem 0;
+  text-align: left;
+  text-indent: 3rem;
+  font-family: var(--primary-font);
+}
+
+.content3 p {
+  margin-left: 0;
+  margin-right: 2.5rem;
+  padding: 0 5rem 0.5rem 0;
+  text-indent: 0;
+  text-align: left;
+  font-family: var(--primary-font);
+}
+
+.two-column-wrapper-home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.two-column-wrapper-golf {
+  display: grid;
+  grid-template-columns: 25% 5% 65%;
+}
+
+.two-column-wrapper-cs1 {
+  display: grid;
+  grid-template-columns: 25% 5% 65%;
+}
+
+.two-column-wrapper-cs2 {
+  display: grid;
+  grid-template-columns: 65% 5% 25%;
+}
+
+.row-wrapper {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.content {
+ padding: 10px;
+}
+
+.content h1 {
+ color: lightseagreen;
+}
+
+.picture img {
+  max-width: 100%;
+  border: solid;
+  height: auto; /* image resizes based on window size */
+}
+
+.articles {
+  margin-left: 10px;
+  background: var(--secondary-bg);
+  align-items: center;
+  border: solid;
+}
+
+.article {
+  padding: 20px;
+}
+
+.article img {
+  max-width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article h5 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-text-color);
+}
+
+.article:hover img {
+  border: solid;
+}
+
+.subtitle {
+  font-family: var(--primary-font);
+}
+
+.project {
+  border: solid;
+}
+
+/*
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */

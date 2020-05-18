@@ -100,6 +100,8 @@ The finished product looks something like this:
 
 ![](Images/contact.png)
 
+_Here, I am hovering over the facebook icon._
+
 ## Acknowledgments 🙏
 
 I consulted these following sources for help on my project:

@@ -28,7 +28,7 @@ Next was adding icons so I that when the bar collapses, people can see the icons
 
 Following that, linking the navbar links were no problem. However, when I hovered over each bar, it was hard to see exactly what I was clicking. So, to fix this, I made it so that the page name you are hovering over turns a different color, like so:
 
-![](Images/navbar.jpg)
+![](Images/navbar.png)
 
 ### Home (Landing)
 
@@ -75,9 +75,30 @@ I made the picture and text next to each other using flexbot. I use flex for sim
 
 ### Projects
 
+I wanted the user to be able to easily access my github projects. I decided a link would be best to do so. I then got a github logo and made it so that clicking on the logo would take you to my github.
+I also made a cool text-box above the github cat logo to make it look like the cat was talking. I did so using a text border box and another empty span box that I rotated to make the triangular shape at the bottom of the speech box. The result looked like this:
+
+![](Images/githubcat.png)
+
 ### Golf
 
+Golf is a big part of my life, so I needed to include it, but also keep in mind that readers of the website might not understand golf jargon. I paid attention to simplifying my terminologies to ideas that people can digest.
+Initially, I had two flexbot columns, one with text on one side, the other with a picture.
+I felt that it was too boring, and needed some interactive elements, so I provided links to relevant articles for people to click on in the text and also a button next to the image that takes website users to my profile.
+One problem I faced was clicking a link only to without it opening up a new tab. I fixed this by inserting target="\_blank". The html code looked as such:
+
+```
+<p>I am currently <a target="_blank" href="https://dartmouthsports.com/news/2020/2/17/athletics-cape-air-athletes-of-the-week-knight-and-zhang.aspx">the all-time record holder for women's golf in Dartmouth history</a>, and hold the best stroke average out of the team.</p>
+```
+
 ### Contact
+
+I wanted something simple yet elegant for the contact page. 
+One aesthetic barrier I faced was that the facebook blue color clashed a lot with the violet pink background. To counter this, I decided to make both social media icons black with a white background. I did so by making a span and rounding its borders to make a white circular shape in the background. I then adjusted the icons themselves to be black for a black-and-white button.
+I decided on using social media icons with a nice animation that makes the icon shift upward and gray-scale when you hover over them. 
+The finished product looks something like this:
+
+![](Images/contact.png)
 
 ## Acknowledgments 🙏
 

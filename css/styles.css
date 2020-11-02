@@ -10,6 +10,9 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ /*
+ * Further additions by Angela Zhang for her personal website 
+ */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -86,6 +89,27 @@ body {
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
+}
+
+/* Additional Code for Project Page */
+.project-wrapper {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.project-tags {
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.project-tags button {
+  padding: 3px 5px;
+  color: white;
+  pointer-events: none;
+  border-radius: 5px;
+  margin-right: 4px;
+  font-size: x-small;
+  border: none;
 }
 
 hr {
@@ -4238,6 +4262,7 @@ input[type="button"].btn-block {
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
+  cursor: pointer;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4939,6 +4964,7 @@ input[type="button"].btn-block {
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
+
 .page-link:hover {
   z-index: 2;
   color: #824027;

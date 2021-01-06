@@ -45,26 +45,20 @@
 var textWrapper = document.querySelector('.ml7 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
+anime.timeline({loop: false})
   .add({
     targets: '.ml7 .letter',
     translateY: ["1.1em", 0],
     translateX: ["0.55em", 0],
     translateZ: 0,
     rotateZ: [180, 0],
-    duration: 750,
+    duration: 1200,
     easing: "easeOutExpo",
     delay: (el, i) => 50 * i
-  }).add({
-    targets: '.ml7',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
   });
 
 function AnimatedText(target,texts,changeInterval,updateInterval,onTextChanged) {
-    var currentText=parseInt(Math.random()*texts.length);
+    var currentText = 0;
     var areaText=texts[0];
     this.t1=setInterval(function(){
         var c=parseInt(Math.random()*Math.max(texts[currentText].length,areaText.length));
@@ -76,14 +70,15 @@ function AnimatedText(target,texts,changeInterval,updateInterval,onTextChanged) 
     areaText=newText;
     if(onTextChanged&&diff) onTextChanged();
     target.innerHTML=areaText.length==0?"&nbsp;":areaText;
-    }.bind(this),updateInterval?updateInterval:50);
+    }.bind(this),updateInterval?updateInterval:20);
     this.t2=setInterval(function(){
-        currentText=parseInt(Math.random()*texts.length);
-    }.bind(this),changeInterval?changeInterval:4000);
+        currentText += 1;
+        if (currentText > 6) { currentText = 0 };
+    }.bind(this),changeInterval?changeInterval:2400);
 }
 AnimatedText.prototype={
     constructor:AnimatedText,
     stop:function(){clearInterval(this.t1);clearInterval(this.t2);}
 };
 
-new AnimatedText(document.getElementById("changing-text"),["fast learner","music lover","devoted worker", "CS addict"]);
+new AnimatedText(document.getElementById("changing-text"),["fast learner","passionate coder", "music lover", "meme enthusiast", "avid golfer", "free spirit", "mom friend"]);

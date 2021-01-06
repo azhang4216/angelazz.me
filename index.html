@@ -15,6 +15,7 @@
       src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- Google fonts-->
     <link
       href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
@@ -59,9 +60,15 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" 
+              href="#home"
+            >
+            Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" 
               href="#about"
             >
-            About / Contact</a>
+            About Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger"
@@ -88,13 +95,17 @@
     </nav>
     <!-- Page Content-->
     <div class="container-fluid p-0">
-      <!-- About-->
-      <section class="resume-section" id="about">
+      <!-- Home-->
+      <section class="resume-section" id="home">
         <div class="resume-section-content">
-          <h1 class="mb-0">
-            Zi Lan
-            <span class="text-primary">"Angela"</span>
-            Zhang
+          <h1 class="ml7">
+            <span class="text-wrapper">
+              <span class="letters">
+                <h1 class="mb-0">
+                  Angela "Zi Lan" Zhang
+                </h1>
+              </span>
+            </span>
           </h1>
           <br/><br/>
           <div class="social-icons">
@@ -119,6 +130,20 @@
         </div>
       </section>
       <hr class="m-0" />
+      <!-- About -->
+      <section class="resume-section" id="about">
+        <div class="resume-section-content">
+            <h1 class="mb-5">Who is Angela?</h2>
+            <div class="mb-0" id="about-text">
+              <p id="changing-text"></p>
+            </div>
+          <br />
+          <a href="https://github.com/azhang4216/angelas-cover-letter" target="__blank"><button type="button" class="btn btn-outline-secondary">
+            Click to Read More
+          </button></a>
+        </div>
+    </section>
+    <hr class="m-0" />
       <!-- Projects -->
       <section class="resume-section" id="projects">
         <div class="resume-section-content">
@@ -161,9 +186,24 @@
                     <hr />
                     <div class="project-wrapper">
                       <div class="project-tags">
+                        <button style="background-color: #694400;">Heroku</button>
+                        <button style="background-color: #691000;">Node.JS</button>
+                        <button style="background-color: #691000;">Express</button>
+                        <button style="background-color: #691000;">Mongoose</button>
+                        <button style="background-color: #691000;">MongoDB</button>
+                      </div>
+                      <a href=" https://github.com/azhang4216/to-do-list" target="__blank">
+                        <h3 class="mb-0">To-Do List</h3>
+                      </a> 
+                      <p>· a to-do list web app deployed with MongoDB cloud databse to Heroku</p>
+                    </div>
+                    <hr />
+                    <div class="project-wrapper">
+                      <div class="project-tags">
                         <button style="background-color: #691000;">HTML5</button>
                         <button style="background-color: #691000;">CSS3</button>
                         <button style="background-color: #00B66B;">JavaScript</button>
+                        <button style="background-color: #691000;">Bootstrap</button>
                       </div>
                       <a href="https://github.com/azhang4216/angelazz.me" target="__blank">
                         <h3 class="mb-0">Personal Website</h3>
@@ -291,8 +331,20 @@
                   <div class="card-body">
                     <div class="project-wrapper">
                       <div class="project-tags">
-                        <button style="background-color: #00B66B;">Python</button>
+                        <button style="background-color: #00B66B;">JavaScript</button>
                         <button style="background-color: #200069;">API</button>
+                      </div>
+                      <a href="https://github.com/azhang4216/RedditAPI" target="__blank">
+                        <h3 class="mb-0">Simon-Says Game</h3>
+                      </a> 
+                      <p>· a fun game inspired by Simon Says</p>
+                    </div>
+                    <hr />
+                    <div class="project-wrapper">
+                      <div class="project-tags">
+                        <button style="background-color: #00B66B;">Python</button>
+                        <button style="background-color: #200069;">DOM Manipulation</button>
+                        <button style="background-color: #200069;">jQuery</button>
                       </div>
                       <a href="https://github.com/azhang4216/RedditAPI" target="__blank">
                         <h3 class="mb-0">Reddit-Twitter API Memes Tool</h3>

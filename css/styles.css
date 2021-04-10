@@ -48,6 +48,81 @@
     "Liberation Mono", "Courier New", monospace;
 }
 
+/* Featured Projects */
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.content > .project-icon {
+  font-size: 80px;
+  /* height: 80px; */
+  /* margin-right: 20px; */
+  flex-basis: 20%;
+}
+
+.content > .content-text {
+  flex-basis: 80%;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.column,
+.column > .gallery {
+  padding: 10px;
+}
+
+/* Create three equal columns that floats next to each other */
+.gallery {
+  float: left;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.column:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.galleryBtn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.galleryBtn:hover {
+  background-color: #ddd;
+  border-radius: 12px;
+}
+
+/* Add a dark background color to the active button */
+.galleryBtn.activeSelection {
+  background-color: var(--dartmouthgreen);
+  color: var(--white);
+  border-radius: 12px;
+}
+
 *,
 *::before,
 *::after {

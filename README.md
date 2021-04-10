@@ -10,3 +10,4 @@ I consulted these following sources for help on my project:
 - [Changing Text Animation](https://fdossena.com/?p=html5cool/anitxt/i.frag)
 - [Home Page Letter Animation](https://tobiasahlin.com/moving-letters/)
 - [Gitignore Template](https://gist.github.com/markbrouch/1026ed545d306febcea4)
+- [Project Filtering](https://www.w3schools.com/howto/howto_js_portfolio_filter.asp)

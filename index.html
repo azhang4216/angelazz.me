@@ -112,7 +112,7 @@
           <div class="social-icons">
             <a
               class="social-icon"
-              href="mailto:angela.zhang.23@dartmouth.edu"
+              href="mailto:azhang4216@gmail.com"
               ><i class="far fa-envelope"></i
             ></a>
             <a
@@ -135,9 +135,11 @@
       <section class="resume-section" id="about">
         <div class="resume-section-content">
             <h2>I'm Angela, a rising junior @ Dartmouth College majoring in computer science.</h2><br />
-            <p>I love making cool apps and projects tailored to the user's experience.</p>
-            <p>I will be working at Amazon AWS as a SWE intern over summer 2021, and I seek to expand my skillsets in future internships.</p>
-            <p>Besides coding, my passions include golf, food, and music.</p>
+            <p>I love making cool apps and projects tailored to the user's experience. 
+              I will be working at Amazon AWS as a SWE intern over summer 2021, and I seek to expand my skillsets in future internships.</p>
+            <p>Being an internationally ranked junior golfer and Division I student-athlete, 
+              I bring the work ethic, determination, and teamwork I have out on the course into my work.</p>
+            <p>If I am not coding or golfing, you can find me making music, exploring good food, or sharing quality memes with friends.</p>
           <br />
           <a href="https://github.com/azhang4216/angelas-cover-letter" target="__blank"><button type="button" class="btn btn-outline-secondary">
             Click to Read More
@@ -157,7 +159,103 @@
               --ml & data science: #E38C2D;
               --other: #200069;
            -->
-          <div class="flex-grow-1">
+           <div id="myBtnContainer">
+            <button class="galleryBtn activeSelection" onclick="filterSelection('all')">All Projects</button>
+            <button class="galleryBtn" onclick="filterSelection('fullstack')">Fullstack</button>
+            <button class="galleryBtn" onclick="filterSelection('arvr')">VR/AR</button>
+            <button class="galleryBtn" onclick="filterSelection('dataml')">Data & ML</button>
+            <button class="galleryBtn" onclick="filterSelection('other')">Other</button>
+          </div>
+          
+          <!-- Portfolio Gallery Grid -->
+          <div class="column">
+
+            <div class="gallery fullstack">
+              <div class="content">
+                <!-- <div class="content-img">
+                  <img src="assets/img/pinebeetle.png" alt="SPB Predict">
+                </div> -->
+                <i class="fas fa-bug project-icon"></i>
+                <div class="content-text">
+                  <h4>SPB Prediction Tool</h4>
+                  <p>a full-stack React web app for interactive pine beetle infestation visualization and prediction backed by the US Forest Service and entomologists</p>
+                  <a href="https://www.spbpredict.com/" target="__blank"><button type="button" class="btn btn-outline-secondary">
+                    Explore
+                  </button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery arvr">
+              <div class="content">
+                <!-- <img src="assets/img/train.png" alt="A Train Away"> -->
+                <i class="fas fa-train project-icon"></i>
+                <div>
+                  <h4>A Train Away</h4>
+                  <p>an immersive story-telling experience in VR</p>
+                  <a href="https://www.youtube.com/watch?v=kVlCGrw6ohk&ab_channel=RorkeKuttel" target="__blank"><button type="button" class="btn btn-outline-secondary">
+                    Explore
+                  </button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery fullstack">
+              <div class="content">
+                <!-- <img src="assets/img/todo.png" alt="To-do List"> -->
+                <i class="fas fa-sticky-note project-icon"></i>
+                <div class="content-text">
+                  <h4>To-Do List</h4>
+                  <p>a to-do list web app deployed with MongoDB cloud database to Heroku</p>
+                  <a href="https://cryptic-atoll-66323.herokuapp.com/new-list" target="__blank"><button type="button" class="btn btn-outline-secondary">
+                    Explore
+                  </button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery dataml">
+              <div class="content">
+                <i class="fas fa-utensils project-icon"></i>
+                <!-- <img src="assets/img/food.png" alt="Amazon Food Products Quality Classifier"> -->
+                <div class="content-text">
+                  <h4>Amazon Food Products Quality Classifier</h4>
+                  <p>predicts the quality of an Amazon food product based on reviews, F1=0.87 (
+                    <a href="mailto:azhang4216@gmail.com?subject=Amazon Food Products Classifier">email me</a>
+                     for code )</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery other">
+              <div class="content">
+                <!-- <img src="assets/img/simonsays.png" alt="Simon Says Game"> -->
+                <i class="fas fa-gamepad project-icon"></i>
+                <div class="content-text">
+                  <h4>Simon Says Game</h4>
+                  <p>a fun JavaScript game inspired by Simon Says</p>
+                  <a href="https://github.com/azhang4216/simon-says" target="__blank"><button type="button" class="btn btn-outline-secondary">
+                    Explore
+                  </button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery other">
+              <div class="content">
+                <i class="fas fa-retweet project-icon"></i>
+                <!-- <img src="assets/img/rtapi.png" alt="Reddit-Twitter API" style="height:50px;"> -->
+                <div class="content-text">
+                  <h4>Cross Platform Meme Sharing Tool</h4>
+                  <p>an API tool leveraging Reddit upvote system and Twitter for optimal meme sharing</p>
+                  <a href="https://github.com/azhang4216/reddit-twitter-api" target="__blank"><button type="button" class="btn btn-outline-secondary">
+                    Explore
+                  </button></a>
+                </div>
+              </div>
+            </div>
+
+          <!-- <div class="flex-grow-1">
             <div class="accordion" id="accordian">
               <div class="card">
                 <div class="card-header" id="headingOne">
@@ -233,7 +331,7 @@
                       <a>
                         <h3 class="mb-0">Amazon Food Products Quality Classifier</h3>
                       </a> 
-                      <p>· predicts the quality of an Amazon food product based on reviews, F1=0.87 (<a href="mailto:angela.zhang.23@dartmouth.edu">email</a> for code)</p>
+                      <p>· predicts the quality of an Amazon food product based on reviews, F1=0.87 (<a href="mailto:azhang4216@gmail.com">email</a> for code)</p>
                     </div>
                     <hr />
                     <div class="project-wrapper">
@@ -356,14 +454,14 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <hr class="m-0" />
       <!-- Student Athlete-->
       <section class="resume-section" id="golf">
         <div class="resume-section-content">
-            <h2 class="mb-5">DIV I Student Athlete</h2>
+            <h2 class="mb-5">I am a recruited Div I golfer and internationally ranked player.</h2>
           <div
             class="d-flex flex-column flex-md-row justify-content-between mb-5"
           >
@@ -371,17 +469,18 @@
               <h3 class="mb-0">Collegiate Golf</h3>
               <div class="subheading mb-3">Member of Dartmouth NCAA Division 1 Women’s Golf Team</div>
               <p>
-                <a
+                <!-- <a
                 target="_blank"
                 href="https://dartmouthsports.com/news/2020/2/17/athletics-cape-air-athletes-of-the-week-knight-and-zhang.aspx"
-                >· All-time Dartmouth Women’s Golf Program Individual Record Holder</a> <br />
+                > -->
+                · All-time Dartmouth Women’s Golf Program Individual Record Holder<br />
                 · 2020 Co-MVP<br />
                 · 2020 Rookie of the Year<br/>
                 · 2020 WGCA All-American Scholar
               </p>
             </div>
             <div class="flex-shrink-0">
-              <span class="text-primary">September 2019 - June 2020</span>
+              <span class="text-primary">September 2019 - Present</span>
             </div>
           </div>
           <div
@@ -393,17 +492,18 @@
               <p>
                 Key awards and achievements include:<br />
                 
-              <a
+              <!-- <a
                 target="_blank"
                 href="http://britishcolumbiagolf.org/uncategorized/3810-angela-zhang-rides-a-suddenly-hot-putter-to-b-c-junior-girls-championship"
-                >· British Columbia Junior Girls Champion 2019</a
-              ><br />
-              <a
+                > -->
+                · British Columbia Junior Girls Champion 2019<br />
+              <!-- <a
               target="_blank"
               href="http://britishcolumbiagolf.org/uncategorized/2613-bc-s-zhang-rebounds-for-win-carver-goes-wire-to-wire-in-thriller,-at-future-links,-driven-by-acura-western-championship"
-              >· Canadian National Future Links Champion 2017</a
-              ><br />
-                · North American Junior Amateur Stroke Play Champion 2018
+              > -->
+                · Canadian National Future Links Champion 2017<br />
+                · North American Junior Amateur Stroke Play Champion 2018<br />
+                · Member of the BC Provincial Team, 5x Pacific NW Champions in a row
               </p>
             </div>
             <div class="flex-shrink-0">
